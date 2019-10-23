@@ -5,133 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
-      a {
-        text-decoration: none;
-      }
-      li {
-        list-style: none;
-      }
-      #head {
-        background-color: #32373e;
-        height: 40px;
-      }
-      .headBar {
-        width: 1200px;
-        margin: 0 auto;
-        line-height: 40px;
-        font-size: 14px;
-        display: flex;
-      }
-      .flexLeft {
-        flex: 1.7;
-      }
-      .flexRight {
-        flex: 1;
-      }
-      .icon {
-        font-size: 20px;
-        color: #00b38a;
-      }
-      .headBar a {
-        color: #afb5c0;
-      }
-      .station {
-        color: #00b38a;
-        padding: 0 12px 0 20px;
-      }
-      .changeStation {
-        font-size: 12px;
-      }
-
-      .indexLi,
-      .indexLi li {
-        display: inline-block;
-        padding: 0 21px;
-        height: 100%;
-      }
-      .barRight li {
-        display: inline-block;
-        padding: 0 8px;
-        color: #afb5c0;
-      }
-      .barRight :nth-child(4) {
-        padding-left: 0px;
-      }
-      .barRight :nth-child(5) {
-        color: #00b38a;
-      }
-      #title {
-        height: 120px;
-        background-color: #00b38a;
-      }
-      .titleBar {
-        width: 1200px;
-        margin: 0 auto;
-      }
-      .titleBar .leftImg {
-        height: 120px;
-      }
-      .titleBar .rightImg {
-        height: 30px;
-        position: relative;
-        bottom: 50px;
-      }
-      .rightImgBox {
-        display: inline-block;
-        text-align: center;
-        font-style: 10px;
-        position: relative;
-      }
-      .rightImgBox span {
-        position: absolute;
-        left: 0;
-        top: -12px;
-        font-size: 14px;
-        color: #fff;
-      }
-      .inputBar {
-        float: right;
-        position: relative;
-      }
-      .inputBar input {
-        line-height: 30px;
-        width: 150px;
-        margin-top: 40px;
-        margin-left: 20px;
-      }
-      .inputBar :nth-child(2){
-          width: 110px;
-      }
-      .inputBar div {
-        display: inline-block;
-        height: 30px;
-        width: 40px;
-        margin-left: -6px;
-        text-align: center;
-        background-color: #fff;
-        border: 1px solid #fff;
-      }
-      .inputBar div a {
-        color: #00b38a;
-        font-size: 12px;
-      }
-      .inputBar button {
-        margin: 0;
-        padding: 0;
-        border: 1px solid #fff;
-        outline: none;
-        height: 35px;
-        width: 110px;
-        background-color: #00b38a;
-        color: #fff;
-      }
-    </style>
+    <link rel="stylesheet" href="index.css" />
   </head>
+
   <body>
     <div id="head">
       <div class="headBar">
@@ -178,6 +54,169 @@
           <div><a href="#">| 获取</a></div>
           <button>登陆/注册</button>
         </div>
+      </div>
+    </div>
+    <div id="search">
+      <div class="search-bar">
+        <input type="text" placeholder="搜索职位、公司或地点" class="search-bar-input"/>
+        <div class="search-bar-completion">
+          <span class="co-text">Andriod</span>
+          <span class="co-text">大于450个职位</span>
+        </div>
+        <button>搜索</button>
+        <br />
+        <span class="search-text">热门搜索:</span>
+        <a href="#">校招早班车</a>
+        <a href="#">IOS</a>
+        <a href="#">java面试</a>
+        <a href="#">架构设计</a>
+        <a href="#">C++</a>
+      </div>
+    </div>
+    <div id="container">
+      <div class="menubox">
+        <div class="menu">
+          <ul class="menu-first">
+            <li>技术</li>
+            <li><a href="#">java</a></li>
+            <li><a href="#">php</a></li>
+            <li><a href="#">C++</a></li>
+            <li><a href="#">区块链</a></li>
+            <li>></li>
+          </ul>
+          <div class="menu-second">
+            <p>后端开发</p>
+            <ul>
+              <li>Java</li>
+              <li>C++</li>
+              <li>PHP</li>
+              <li>数据挖掘</li>
+              <li>搜索算法</li>
+              <li>精准推荐</li>
+              <li>C</li>
+              <li>C#</li>
+              <li>全栈工程师</li>
+              <li>.NET</li>
+              <li>HaDoop</li>
+              <li>Python</li>
+              <li>VB</li>
+              <li>Ruby</li>
+              <li>Go</li>
+              <li>Shell</li>
+            </ul>
+
+            <p>移动开发</p>
+
+            <ul>
+              <li>HTML5</li>
+              <li>Android</li>
+              <li>IOS</li>
+              <li>WP</li>
+              <li>移动其他开发</li>
+            </ul>
+            <p>前端开发</p>
+            <ul>
+              <li>WEB前段</li>
+              <li>FLASH</li>
+              <li>html5</li>
+              <li>Javascript</li>
+              <li>U3D</li>
+              <li>前段其他开发</li>
+            </ul>
+            <p>前端开发</p>
+            <ul>
+              <li>WEB前段</li>
+              <li>FLASH</li>
+              <li>html5</li>
+              <li>Javascript</li>
+              <li>U3D</li>
+              <li>前段其他开发</li>
+            </ul>
+            <p>前端开发</p>
+            <ul>
+              <li>WEB前段</li>
+              <li>FLASH</li>
+              <li>html5</li>
+              <li>Javascript</li>
+              <li>U3D</li>
+              <li>前段其他开发</li>
+            </ul>
+          </div>
+        </div>
+        <div class="menu">
+          <ul class="menu-first">
+            <li>技术</li>
+            <li><a href="#">java</a></li>
+            <li><a href="#">php</a></li>
+            <li><a href="#">C++</a></li>
+            <li><a href="#">区块链</a></li>
+            <li>></li>
+          </ul>
+        </div>
+        <div class="menu">
+          <ul class="menu-first">
+            <li>技术</li>
+            <li><a href="#">java</a></li>
+            <li><a href="#">php</a></li>
+            <li><a href="#">C++</a></li>
+            <li><a href="#">区块链</a></li>
+            <li>></li>
+          </ul>
+        </div>
+        <div class="menu">
+          <ul class="menu-first">
+            <li>技术</li>
+            <li><a href="#">java</a></li>
+            <li><a href="#">php</a></li>
+            <li><a href="#">C++</a></li>
+            <li><a href="#">区块链</a></li>
+            <li>></li>
+          </ul>
+        </div>
+        <div class="menu">
+          <ul class="menu-first" `>
+            <li>技术</li>
+            <li><a href="#">java</a></li>
+            <li><a href="#">php</a></li>
+            <li><a href="#">C++</a></li>
+            <li><a href="#">区块链</a></li>
+            <li>></li>
+          </ul>
+        </div>
+        <div class="menu">
+          <ul class="menu-first">
+            <li>技术</li>
+            <li><a href="#">java</a></li>
+            <li><a href="#">php</a></li>
+            <li><a href="#">C++</a></li>
+            <li><a href="#">区块链</a></li>
+            <li>></li>
+          </ul>
+        </div>
+        <div class="menu">
+          <ul class="menu-first">
+            <li>技术</li>
+            <li><a href="#">java</a></li>
+            <li><a href="#">php</a></li>
+            <li><a href="#">C++</a></li>
+            <li><a href="#">区块链</a></li>
+            <li>></li>
+          </ul>
+        </div>
+        <div class="menu">
+          <ul class="menu-first">
+            <li>技术</li>
+            <li><a href="#">java</a></li>
+            <li><a href="#">php</a></li>
+            <li><a href="#">C++</a></li>
+            <li><a href="#">区块链</a></li>
+            <li>></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="img-cpn">
+        <img src="./img/CgotOV2tnliAZHiOAAGUPLYyy4w057.jpg" alt="830*346" />
       </div>
     </div>
   </body>
