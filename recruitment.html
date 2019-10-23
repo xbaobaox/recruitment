@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      a {
+        text-decoration: none;
+      }
+      li {
+        list-style: none;
+      }
+      #head {
+        background-color: #32373e;
+        height: 40px;
+      }
+      .headBar {
+        width: 1200px;
+        margin: 0 auto;
+        line-height: 40px;
+        font-size: 14px;
+        display: flex;
+      }
+      .flexLeft {
+        flex: 1.7;
+      }
+      .flexRight {
+        flex: 1;
+      }
+      .icon {
+        font-size: 20px;
+        color: #00b38a;
+      }
+      .headBar a {
+        color: #afb5c0;
+      }
+      .station {
+        color: #00b38a;
+        padding: 0 12px 0 20px;
+      }
+      .changeStation {
+        font-size: 12px;
+      }
+
+      .indexLi,
+      .indexLi li {
+        display: inline-block;
+        padding: 0 21px;
+        height: 100%;
+      }
+      .barRight li {
+        display: inline-block;
+        padding: 0 8px;
+        color: #afb5c0;
+      }
+      .barRight :nth-child(4) {
+        padding-left: 0px;
+      }
+      .barRight :nth-child(5) {
+        color: #00b38a;
+      }
+      #title {
+        height: 120px;
+        background-color: #00b38a;
+      }
+      .titleBar {
+        width: 1200px;
+        margin: 0 auto;
+      }
+      .titleBar .leftImg {
+        height: 120px;
+      }
+      .titleBar .rightImg {
+        height: 30px;
+        position: relative;
+        bottom: 50px;
+      }
+      .rightImgBox {
+        display: inline-block;
+        text-align: center;
+        font-style: 10px;
+        position: relative;
+      }
+      .rightImgBox span {
+        position: absolute;
+        left: 0;
+        top: -12px;
+        font-size: 14px;
+        color: #fff;
+      }
+      .inputBar {
+        float: right;
+        position: relative;
+      }
+      .inputBar input {
+        line-height: 30px;
+        width: 150px;
+        margin-top: 40px;
+        margin-left: 20px;
+      }
+      .inputBar :nth-child(2){
+          width: 110px;
+      }
+      .inputBar div {
+        display: inline-block;
+        height: 30px;
+        width: 40px;
+        margin-left: -6px;
+        text-align: center;
+        background-color: #fff;
+        border: 1px solid #fff;
+      }
+      .inputBar div a {
+        color: #00b38a;
+        font-size: 12px;
+      }
+      .inputBar button {
+        margin: 0;
+        padding: 0;
+        border: 1px solid #fff;
+        outline: none;
+        height: 35px;
+        width: 110px;
+        background-color: #00b38a;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="head">
+      <div class="headBar">
+        <div class="flexLeft">
+          <span class="icon">拉钩</span>
+          <span class="station">全国站</span>
+          <a href="#">
+            <span class="changeStation">[切换城市]</span>
+          </a>
+          <ul class="indexLi">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">公司</a></li>
+            <li><a href="#">校园招聘</a></li>
+            <li><a href="#">言职</a></li>
+            <li><a href="#">课程</a></li>
+          </ul>
+        </div>
+
+        <div class="flexRight">
+          <ul class="barRight">
+            <li>职位订阅</li>
+            <li>头ic</li>
+            <li>登陆 <span>&nbsp;&nbsp;|</span></li>
+            <li>注册</li>
+            <li>icon拉钩APP</li>
+            <li>进入企业版</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="title">
+      <div class="titleBar">
+        <img src="./img/logo_41a2761.png" alt="" class="leftImg" />
+        <div class="rightImgBox">
+          <img src="./img/text_ae1d842.png" alt="" class="rightImg" />
+          <span>
+            787164家公司 | 6472831个职位，在拉勾等你
+          </span>
+        </div>
+        <div class="inputBar">
+          <input type="text" placeholder="输入手机号" />
+          <input type="text" placeholder="验证码" />
+          <div><a href="#">| 获取</a></div>
+          <button>登陆/注册</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
