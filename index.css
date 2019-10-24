@@ -142,13 +142,18 @@ li {
   /* line-height: 46px; */
 }
 .search-bar input {
+  text-align: left;
   font-size: 16px;
   padding-left: 10px;
   width: 795px;
   height: 46px;
   margin: 0 auto;
-  outline: #00b38a;
+  border: none;
+  outline: #00b38a none 1px;
   /* position: relative; */
+}
+.search-btn {
+  display: inline-block;
 }
 .search-bar button {
   position: relative;
@@ -156,7 +161,7 @@ li {
   margin: 0;
   padding: 0;
   width: 142px;
-  height: 51px;
+  height: 46px;
   margin-left: -10px;
   border: 1px solid #00b38a;
   outline: none;
@@ -164,34 +169,62 @@ li {
   color: #fff;
   font-size: 18px;
 }
-.search-bar-completion{
-  width: 804px;
-  height: 300px;
-  top: 74px;
-  left: 127px;
+.search-bar-completion {
+  width: 800px;
+  height: 320px;
+  top: 68px;
+  left: 129px;
   background-color: #fff;
   position: absolute;
   z-index: 11;
-  text-align: justify;
   display: none;
 }
-.search-bar-completion:after { 
-  content: ""; 
-  display: inline-block; 
-  overflow: hidden; 
-  width: 100%; 
-} 
-.search-bar-completion .co-text{
-  /* text-align: justify; */
-  display: inline-block;
-  position: relative;
+.search-info {
+  display: flex;
+  font-size: 16px;
+  text-align: left;
+  height: 32px;
+  line-height: 16px;
+}
+.search-info:hover .job {
+  color: #fff;
+}
+.search-info:hover .job-number span {
+  color: #fff;
+}
+.search-info:hover {
+  background-color: #00b38a;
+  color: #fff;
+}
+.search-info .job {
+  flex: 1;
+  padding-left: 10px;
+  margin-top: 8px;
+  color: #555;
+}
+.job-number {
+  margin-top: 8px;
+  width: 160px;
+  border-right: 1px dashed #afb5c0;
+  text-align: right;
+}
+.job-number span {
+  color: #00b38a;
+}
+.nbsp {
+  margin-top: 8px;
+  width: 60px;
+  text-align: middle;
+  padding-left: 20px;
   color: #777;
-  text-align: center;
+  vertical-align: middle;
 }
-.search-bar:hover .search-bar-completion{
-  display:block;
-  z-index: 11;
+
+.search-bar:hover .search-bar-completion {
+  display: block;
+  z-index: 15;
 }
+
 .search-bar .search-text,
 .search-bar a {
   position: relative;
@@ -226,13 +259,18 @@ li {
 .menu-first {
   background-color: #fff;
   width: 321px;
-  height: 47px;
+  height: 46px;
+  position: relative;
+  margin-bottom: 3px;
+  /* z-index: 11; */
   /* hove效果shadow */
 }
 .menu:hover {
   box-shadow: 0px 0px 10px#cfcfcf;
   width: 320px;
-  z-index: 10;
+}
+.menu:hover .menu-first {
+  z-index: 16;
 }
 .menu ul li a:hover {
   color: #00b38a;
@@ -284,7 +322,7 @@ li {
 }
 .menu:hover .menu-second {
   display: block;
-  /* z-index: 1; */
+  z-index: 1;
 }
 .menu-second p {
   padding: 20px 20px 0px 20px;
@@ -307,3 +345,165 @@ li {
 /* .menu-second ul :last-child ::after {
   content: "";
 } */
+#current-hot {
+  padding-top: 50px;
+  padding-left: 30px;
+  width: 1200px;
+  margin: 0 auto;
+  font-size: 16px;
+  /* height: 1500px; */
+  /* display: flex; */
+}
+.current-title {
+  border-bottom: 1px solid #e8e8e8;
+  /* border-bottom: 1px solid black; */
+  width: 1185px;
+}
+.hot,
+.newjob {
+  display: inline-block;
+  padding-bottom: 14px;
+}
+.hot {
+  margin-right: 58px;
+  color: #333;
+  border-bottom: solid 2px #333;
+}
+.newjob {
+  color: #999;
+}
+.current-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+}
+.boxes {
+  flex:1;
+  width: 389px;
+  height: 200px;
+  border: 1px solid #eaeeed;
+  margin-top: 16px;
+  /* flex-grow: 0; */
+  /* padding-right:19px; */
+  margin-right: 16px;
+  /* box-shadow: 0 0 10px 0 rgba(56,81,76,.12);  hover*/
+}
+.boxes:hover{
+  box-shadow: 0 0 10px 0 rgba(56,81,76,.12)
+}
+.box-cont {
+  width: 351px;
+  margin: 0 auto;
+}
+.titleA {
+  display: inline-block;
+  color: #333;
+  width: 132px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 20px 0px 10px 0px;
+  white-space: nowrap;
+}
+.publish {
+  vertical-align: top;
+  display: inline-block;
+  color: #999;
+  font-size: 14px;
+  padding: 20px 65px 10px 0px;
+}
+.money {
+  padding: 20px 0px 10px 0px;
+  display: inline-block;
+  vertical-align: top;
+  color: #fa6041;
+}
+.title-label p {
+  display: inline-block;
+}
+.demand {
+  line-height: 0px;
+  padding: 0px 0px 20px 0px;
+  color: #777;
+  font-size: 14px;
+}
+.title-label {
+  padding: 0px 20px 20px 0px;
+  border-bottom: 1px dotted #999;
+}
+.title-label p {
+  margin-right: 6px;
+  width: 73px;
+  height: 28px;
+  color:#999;
+  border: 1px solid #999;
+  font-size: 12px;
+  line-height: 28px;
+  vertical-align: middle;
+  text-align: center;
+}
+.box-log {
+  padding: 20px;
+  margin-top: 40px;
+}
+.box-logo img {
+  display: inline-block;
+  padding:20px 10px 0px 0px;
+  width: 40px;
+  height: 40px;
+}
+.logo-cpy{
+  display: inline-block;
+}
+.cpy1{
+  color:#555;
+  font-size: 14px;
+}
+.cpy2{
+  color:#999;
+  font-size: 14px;
+}
+.current-btn{
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  
+}
+.current-btn button{
+  margin: 0;
+  padding: 0;
+  width: 384px;
+  height: 42px;
+  border: 1px solid #00B38A;
+  color:#00B38A;
+  background-color: #fff;
+  margin-top: 16px;
+  position: relative;
+  left: -8px;
+}
+.current-btn:hover button{
+  color:#fff;
+  background-color: #00b38a;
+}
+#hot-company{
+  width: 1200px;
+  margin:0 auto;
+  margin-top:52px;
+  /* padding:0px 0px 14px 0px; */
+  border-bottom:1px solid #555;
+}
+.company-title{
+  /* padding: 14px 0px; */
+  font-size: 16px;
+  color:#333;
+  /* margin-bottom: 14px; */
+  height: 51px;
+  width: 128px;
+  border-bottom: 2px solid black;
+}
+#footer{
+  padding-top: 100px;
+  width: 1200px;
+  height: 300px;
+  margin: 0 auto;
+}
