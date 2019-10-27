@@ -508,7 +508,7 @@ li {
   height: 572px;
 }
 .com-boxes {
-  flex:1;
+  flex: 1;
   width: 288px;
   height: 270px;
   margin: 16px 16px 0px 0px;
@@ -517,80 +517,211 @@ li {
 .com-boxes:hover {
   box-shadow: 0 0 10px 0 rgba(56, 81, 76, 0.12);
 }
-.com-cont{
+.com-cont {
   width: 260px;
-  margin:0 auto;
+  margin: 0 auto;
   text-align: center;
   /* height: 202px; */
 }
-.box-top{
+.box-top {
   width: 260px;
   height: 167px;
-  margin:0 auto;
-  padding:20px 0px 14px 0px;
+  margin: 0 auto;
+  padding: 20px 0px 14px 0px;
   border-bottom: 1px dashed #e0e0e0;
 }
-.com-cont img{
+.com-cont img {
   width: 80px;
   height: 80px;
 }
-.com-name{
+.com-name {
   color: #333;
   font-size: 16px;
-  margin-top:13px;
+  margin-top: 13px;
 }
-.com-class{
+.com-class {
   font-size: 14px;
-  color:#999;
+  color: #999;
   margin-top: 3px;
 }
-.com-explain{
+.com-explain {
   font-size: 14px;
-  color:#555;
-  overflow:hidden;
+  color: #555;
+  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   margin-top: 5px;
 }
-.box-bottom{
+.box-bottom {
   width: 260px;
-  margin:0 auto;
-  
+  margin: 0 auto;
 }
-.bottom-left,.bottom-middle{
+.bottom-left,
+.bottom-middle {
   margin-top: 15px;
   width: 80px;
   height: 35px;
-  border-right:1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
   display: inline-block;
   /* line-height: 35px; */
 }
-.bottom-right{
+.bottom-right {
   width: 80px;
   height: 35px;
   margin-top: 15px;
   display: inline-block;
 }
-.left-num,.middle-num,.right-num{
+.left-num,
+.middle-num,
+.right-num {
   color: #00b38a;
   font-size: 14px;
 }
-.left-text,.middle-text,.right-text{
-color:#999;
-font-size: 12px;
+.left-text,
+.middle-text,
+.right-text {
+  color: #999;
+  font-size: 12px;
 }
-.left-text:hover{
-  color:#00b38a;
+.left-text:hover {
+  color: #00b38a;
 }
-.middle-text:hover{
-  color:#00b38a
+.middle-text:hover {
+  color: #00b38a;
 }
-.right-text:hover{
-  color:#00b38a
+.right-text:hover {
+  color: #00b38a;
+}
+.more {
+  text-align: center;
+  margin-top: 16px;
+}
+.more button {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  border: 1px solid #00b38a;
+  width: 387px;
+  height: 42px;
+  margin: 0 auto;
+  color: #00b38a;
+}
+.more button:hover {
+  color: #fff;
+  background-color: #00b38a;
+}
+#friend-link {
+  width: 1200px;
+  margin: 0 auto;
+}
+.link-box {
+  border-bottom: 1px solid #e8e8e8;
+  margin-top: 50px;
+}
+.link-title {
+  width: 64px;
+  height: 22px;
+  padding: 14px 0;
+  border-bottom: 2px solid #333;
+}
+.link-cont{
+  display: inline-block;
+  width: 1120px;
+  height: 30px;
+  margin-top:16px;
+  overflow: hidden;
+}
+
+.link-cont p {
+  display: inline-block;
+  padding:8px 18px 8px 0;
+  /*padding-right: 18px;
+  */color: #555;
+  font-size: 14px;
+  
+}
+.extend{
+  display: inline-block;
+  text-align: right;
+  vertical-align: top;
+  margin-top: 16px;
+  color: #999;
+  font-size: 14px;
+  margin-left: 47px;
+}
+.extend :hover .link-cont{
+  height: 175px;
+}
+/* .extend i{
+  background-image: url(./img/arrow_down2_eea7e54.png);
+  background-repeat: no-repeat;
+  background-position: 0 3px;
+  background-size: 12px 6px;
+  width: 12px;
+  height: 12px;
+  margin-left: 5px;
+} */
+.footer-line{
+  margin-top: 80px;
+  width: 100%;
+  border-bottom:1px solid #e8e8e8;
 }
 #footer {
   padding-top: 100px;
   width: 1200px;
   height: 300px;
   margin: 0 auto;
+}
+.footer-left{
+  display: inline-block;
+  width: 182px;
+  height: 170px;
+  padding-right: 130px;
+  border-right: 1px solid #e8e8e8;
+}
+.footer-app button,.footer-miniapp button{
+  margin: 0;
+  padding: 0;
+  border: 1px solid #00b38a;
+  background-color: #fff;
+  color: #00b38a;
+  width: 182px;
+  height: 42px;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+.contact{
+  font-size: 14px;
+  color: #555;
+}
+.weixin{
+  margin-right:65px;
+}
+.footer-right{
+  display: inline-flex;
+  vertical-align: top;
+  width: 882px;
+  height: 170px;
+
+}
+.serve{
+  /* border:1px solid black; */
+  display: inline-block;
+  flex:1;
+  margin-left: 130px;
+}
+.serve-title{
+  color:#555;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.serve-cont p{
+  white-space: nowrap;
+  color:#555;
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+.serve-cont :hover p{  
+  color:#00b38a;
 }
