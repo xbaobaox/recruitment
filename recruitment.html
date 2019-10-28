@@ -9,10 +9,11 @@
   </head>
 
   <body>
+    <!-- 头部组件 -->
     <div id="head">
       <div class="headBar">
+          <span class="lagou-icon"></span>
         <div class="flexLeft">
-          <span class="icon">拉钩</span>
           <span class="station">全国站</span>
           <a href="#">
             <span class="changeStation">[切换城市]</span>
@@ -22,23 +23,29 @@
             <li><a href="#">公司</a></li>
             <li><a href="#">校园招聘</a></li>
             <li><a href="#">言职</a></li>
-            <li><a href="#">课程</a></li>
+            <li>
+              <a href="#"
+                >课程
+                <span>new</span>
+              </a>
+            </li>
           </ul>
         </div>
 
         <div class="flexRight">
           <ul class="barRight">
-            <li>职位订阅</li>
-            <li>头ic</li>
-            <li>登陆 <span>&nbsp;&nbsp;|</span></li>
-            <li>注册</li>
-            <li>icon拉钩APP</li>
-            <li>进入企业版</li>
+            <li> <a href="">上传简历</a> </li>
+            <li> <a href="">职位订阅</a> </li>
+            <li> <a href="">登陆</a> </li>
+            <li>|</li>
+            <li> <a href="">注册</a> </li>
+            <li><a href="">拉勾APP</a> </li>
+            <li> <a href="">进入企业版</a> </li>
           </ul>
         </div>
       </div>
     </div>
-
+    <!-- 登陆组件 -->
     <div id="title">
       <div class="titleBar">
         <img src="./img/logo_41a2761.png" alt="" class="leftImg" />
@@ -56,6 +63,7 @@
         </div>
       </div>
     </div>
+    <!-- 搜索组件 -->
     <div id="search">
       <div class="search-bar">
         <input
@@ -128,6 +136,7 @@
         </div>
       </div>
     </div>
+    <!-- 内容 -->
     <div id="container">
       <div class="menubox">
         <div class="menu">
@@ -274,6 +283,7 @@
         <img src="./img/CgotOV2tnliAZHiOAAGUPLYyy4w057.jpg" alt="830*346" />
       </div>
     </div>
+    <!-- 24hour热门 -->
     <div id="current-hot">
       <div class="current-title">
         <ul>
@@ -287,8 +297,37 @@
           <div class="box-cont">
             <div class="box-title">
               <a href="#" class="titleA">Java开发工程师(2020校招)</a>
-              <span class="publish">[一天前发布]</span>
-              <i class="publish-icon"></i>
+              <span class="publish">[一天前发布] </span>
+              <div class="publish-icon">
+                <!-- hover 图片 -->
+                <img
+                  src="./img/icon_chat2_d162651.png"
+                  alt=""
+                  class="chat-img"
+                />
+                <!-- img后插入chat模块 -->
+                <div class="chat-active">
+                  <div class="chat-left">
+                    <img
+                      src="./img/chat_active.png"
+                      alt=""
+                      class="active-img"
+                    />
+                    <div class="chat-title">
+                      <p class="chat_title_name">招聘</p>
+                      <p class="chat_title_info">HR</p>
+                    </div>
+                    <div class="chat-info">
+                      HI,对我发布的职位感兴趣？用拉勾APP扫码,直接和我聊聊吧！
+                    </div>
+                  </div>
+                  <div class="chat-right">
+                    <img src="./img/qrcode.png" alt="" class="chat-qrcode" />
+                  </div>
+                  <div class="triangle"></div>
+                </div>
+              </div>
+
               <span class="money">10K-16K</span>
               <p class="demand">经验应届毕业生/本科</p>
             </div>
@@ -879,7 +918,7 @@
       <div class="footer-left">
         <div class="footer-app">
           <a href="#">
-            <button><span></span>下载拉钩APP</button>
+            <button><span></span>下载拉勾APP</button>
           </a>
         </div>
         <div class="footer-miniapp">
@@ -891,13 +930,19 @@
           <!-- 添加hover图标 -->
         </div>
         <div class="contact">
-          <a href=""> 
-            <span></span><span class="weixin">拉钩微信
+          <a href="">
+            <span></span
+            ><span class="weixin"
+              >拉勾微信
 
-              <img src="./img/lg_pic_weixin@2x_c372698.png" alt="" class="weixin-pic">
+              <img
+                src="./img/lg_pic_weixin@2x_c372698.png"
+                alt=""
+                class="weixin-pic"
+              />
             </span>
           </a>
-          <a href=""> <span></span><span class="weibo">拉钩微博</span> </a>
+          <a href=""> <span></span><span class="weibo">拉勾微博</span> </a>
         </div>
       </div>
       <div class="footer-right">
@@ -908,7 +953,7 @@
           <div class="serve-cont">
             <a href="#"><p>招聘抢人宝典</p></a>
             <a href="#"><p>公司搜索</p></a>
-            <a href="#"><p>拉钩APP</p></a>
+            <a href="#"><p>拉勾APP</p></a>
           </div>
         </div>
         <div class="serve">
@@ -940,13 +985,24 @@
     <!-- copyright -->
     <div id="copyright">
       <div class="copyright-cont">
-        <span class="copyright-title">©2018 拉勾网</span>
-        <span class="beian"> <a href="#" >京ICP备14023790号-2</a> </span>
-        <span></span> <span class="beian-info"> <a href="#">京公网安备 11010802024043号</a> </span>
-        <div class="police">
-          <p>违法和不良信息举报</p>
-          <p>电话: 4006 2828 35</p>
-          <p>邮箱: cc@lagou.com</p>
+        <div class="copyright-cont-left">
+          <span class="copyright-title">©2018 拉勾网</span>
+          <span class="beian"> <a href="#">京ICP备14023790号-2</a> </span>
+          <span class="sprite-gongan"></span>
+          <span class="beian-info">
+            <a href="#">京公网安备 11010802024043号</a>
+          </span>
+          <div class="police">
+            <span class="sprite-jubao"></span>
+            <div class="police-info">
+              <p>违法和不良信息举报</p>
+              <p>电话: 4006 2828 35</p>
+              <p>邮箱: cc@lagou.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="copyright-cont-right">
+          <i class="footer-lagou-icon"></i>
         </div>
       </div>
     </div>
