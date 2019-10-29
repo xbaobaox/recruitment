@@ -622,6 +622,9 @@ li {
   color: #555;
   font-size: 14px;
 }
+.logo-cpy a .cpy1:hover{
+  color:#00b38a;
+}
 .cpy2 {
   color: #999;
   font-size: 14px;
@@ -783,7 +786,7 @@ li {
   margin-top: 50px;
 }
 .link-title {
-  width: 64px;
+  width: 72px;
   height: 22px;
   padding: 14px 0;
   border-bottom: 2px solid #333;
@@ -813,7 +816,7 @@ li {
   margin-top: 16px;
   color: #999;
   font-size: 14px;
-  margin-left: 47px;
+  margin-left: 46px;
 }
 .extend :hover .link-cont {
   height: 175px;
@@ -913,7 +916,7 @@ li {
 .footer-right {
   display: inline-flex;
   vertical-align: top;
-  width: 882px;
+  width: 881px;
   height: 170px;
 }
 .serve {
