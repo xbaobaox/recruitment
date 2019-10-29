@@ -1,595 +1,643 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Document</title>
-  <link rel="stylesheet" href="index.css" />
-</head>
-
-<body>
-  <!-- 头部组件 -->
-  <div id="head">
-    <div class="headBar">
-      <span class="lagou-icon"></span>
-      <div class="flexLeft">
-        <span class="station">全国站</span>
-        <a href="#">
-          <span class="changeStation">[切换城市]</span>
-        </a>
-        <ul class="indexLi">
-          <li><a href="#">首页</a></li>
-          <li><a href="#">公司</a></li>
-          <li><a href="#">校园招聘</a></li>
-          <li><a href="#">言职</a></li>
-          <li>
-            <a href="#">课程
-              <span>new</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="flexRight">
-        <ul class="barRight">
-          <li> <a href="">上传简历</a> </li>
-          <li> <a href="">职位订阅</a> </li>
-          <li> <a href="">登陆</a> </li>
-          <li>|</li>
-          <li> <a href="">注册</a> </li>
-          <li><a href="">拉勾APP</a> </li>
-          <li> <a href="">进入企业版</a> </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <!-- 登陆组件 -->
-  <div id="title">
-    <div class="titleBar">
-      <img src="./img/logo_41a2761.png" alt="" class="leftImg" />
-      <div class="rightImgBox">
-        <img src="./img/text_ae1d842.png" alt="" class="rightImg" />
-        <span>
-          787164家公司 | 6472831个职位，在拉勾等你
-        </span>
-      </div>
-      <div class="inputBar">
-        <input type="text" placeholder="输入手机号" />
-        <input type="text" placeholder="验证码" />
-        <div><a href="#">| 获取</a></div>
-        <button>登陆/注册</button>
-      </div>
-    </div>
-  </div>
-  <!-- 搜索组件 -->
-  <div id="search">
-    <div class="search-bar">
-      <input type="text" placeholder="搜索职位、公司或地点" class="search-bar-input" />
-      <div class="search-bar-completion">
-        <div class="search-info">
-          <div class="job">dba</div>
-          <div class="job-number">大于 <span>450个</span>职位</div>
-          <div class="nbsp">职位</div>
-        </div>
-        <div class="search-info">
-          <div class="job">devops</div>
-          <div class="job-number">共<span>360个</span>职位</div>
-          <div class="nbsp">&nbsp;</div>
-        </div>
-        <div class="search-info">
-          <div class="job">devops</div>
-          <div class="job-number">共<span>360个</span>职位</div>
-          <div class="nbsp">&nbsp;</div>
-        </div>
-        <div class="search-info">
-          <div class="job">devops</div>
-          <div class="job-number">共<span>360个</span>职位</div>
-          <div class="nbsp">&nbsp;</div>
-        </div>
-        <div class="search-info">
-          <div class="job">devops</div>
-          <div class="job-number">共<span>360个</span>职位</div>
-          <div class="nbsp">&nbsp;</div>
-        </div>
-        <div class="search-info">
-          <div class="job">devops</div>
-          <div class="job-number">共<span>360个</span>职位</div>
-          <div class="nbsp">&nbsp;</div>
-        </div>
-        <div class="search-info">
-          <div class="job">devops</div>
-          <div class="job-number">共<span>360个</span>职位</div>
-          <div class="nbsp">&nbsp;</div>
-        </div>
-        <div class="search-info">
-          <div class="job">devops</div>
-          <div class="job-number">共<span>360个</span>职位</div>
-          <div class="nbsp">&nbsp;</div>
-        </div>
-        <div class="search-info">
-          <div class="job">devops</div>
-          <div class="job-number">共<span>360个</span>职位</div>
-          <div class="nbsp">&nbsp;</div>
-        </div>
-        <div class="search-info">
-          <div class="job">devops</div>
-          <div class="job-number">共<span>360个</span>职位</div>
-          <div class="nbsp">&nbsp;</div>
-        </div>
-      </div>
-      <div class="search-btn">
-        <button>搜索</button>
-      </div>
-      <div class="search-btn-info">
-        <span class="search-text">热门搜索:</span>
-        <a href="#">校招早班车</a>
-        <a href="#">IOS</a>
-        <a href="#">java面试</a>
-        <a href="#">架构设计</a>
-        <a href="#">C++</a>
-      </div>
-    </div>
-  </div>
-  <!-- 内容 -->
-  <div id="container">
-    <div class="menubox">
-      <div class="menu">
-        <ul class="menu-first">
-          <li>技术</li>
-          <li><a href="#">java</a></li>
-          <li><a href="#">php</a></li>
-          <li><a href="#">C++</a></li>
-          <li><a href="#">区块链</a></li>
-          <li>></li>
-        </ul>
-        <div class="menu-second">
-          <p>后端开发</p>
-          <ul>
-            <li>Java</li>
-            <li>C++</li>
-            <li>PHP</li>
-            <li>数据挖掘</li>
-            <li>搜索算法</li>
-            <li>精准推荐</li>
-            <li>C</li>
-            <li>C#</li>
-            <li>全栈工程师</li>
-            <li>.NET</li>
-            <li>HaDoop</li>
-            <li>Python</li>
-            <li>VB</li>
-            <li>Ruby</li>
-            <li>Go</li>
-            <li>Shell</li>
-          </ul>
-
-          <p>移动开发</p>
-
-          <ul>
-            <li>HTML5</li>
-            <li>Android</li>
-            <li>IOS</li>
-            <li>WP</li>
-            <li>移动其他开发</li>
-          </ul>
-          <p>前端开发</p>
-          <ul>
-            <li>WEB前段</li>
-            <li>FLASH</li>
-            <li>html5</li>
-            <li>Javascript</li>
-            <li>U3D</li>
-            <li>前段其他开发</li>
-          </ul>
-          <p>前端开发</p>
-          <ul>
-            <li>WEB前段</li>
-            <li>FLASH</li>
-            <li>html5</li>
-            <li>Javascript</li>
-            <li>U3D</li>
-            <li>前段其他开发</li>
-          </ul>
-          <p>前端开发</p>
-          <ul>
-            <li>WEB前段</li>
-            <li>FLASH</li>
-            <li>html5</li>
-            <li>Javascript</li>
-            <li>U3D</li>
-            <li>前段其他开发</li>
-          </ul>
-        </div>
-      </div>
-      <div class="menu">
-        <ul class="menu-first">
-          <li>技术</li>
-          <li><a href="#">java</a></li>
-          <li><a href="#">php</a></li>
-          <li><a href="#">C++</a></li>
-          <li><a href="#">区块链</a></li>
-          <li>></li>
-        </ul>
-      </div>
-      <div class="menu">
-        <ul class="menu-first">
-          <li>技术</li>
-          <li><a href="#">java</a></li>
-          <li><a href="#">php</a></li>
-          <li><a href="#">C++</a></li>
-          <li><a href="#">区块链</a></li>
-          <li>></li>
-        </ul>
-      </div>
-      <div class="menu">
-        <ul class="menu-first">
-          <li>技术</li>
-          <li><a href="#">java</a></li>
-          <li><a href="#">php</a></li>
-          <li><a href="#">C++</a></li>
-          <li><a href="#">区块链</a></li>
-          <li>></li>
-        </ul>
-      </div>
-      <div class="menu">
-        <ul class="menu-first" `>
-          <li>技术</li>
-          <li><a href="#">java</a></li>
-          <li><a href="#">php</a></li>
-          <li><a href="#">C++</a></li>
-          <li><a href="#">区块链</a></li>
-          <li>></li>
-        </ul>
-      </div>
-      <div class="menu">
-        <ul class="menu-first">
-          <li>技术</li>
-          <li><a href="#">java</a></li>
-          <li><a href="#">php</a></li>
-          <li><a href="#">C++</a></li>
-          <li><a href="#">区块链</a></li>
-          <li>></li>
-        </ul>
-      </div>
-      <div class="menu">
-        <ul class="menu-first">
-          <li>技术</li>
-          <li><a href="#">java</a></li>
-          <li><a href="#">php</a></li>
-          <li><a href="#">C++</a></li>
-          <li><a href="#">区块链</a></li>
-          <li>></li>
-        </ul>
-      </div>
-      <div class="menu">
-        <ul class="menu-first">
-          <li>技术</li>
-          <li><a href="#">java</a></li>
-          <li><a href="#">php</a></li>
-          <li><a href="#">C++</a></li>
-          <li><a href="#">区块链</a></li>
-          <li>></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="img-cpn">
-      <img src="./img/CgotOV2tnliAZHiOAAGUPLYyy4w057.jpg" alt="830*346" />
-    </div>
-  </div>
-  <!-- 24hour热门 -->
-  <div id="current-hot">
-    <div class="current-title">
-      <ul>
-        <li class="hot">24Hour热门</li>
-        <li class="newjob">最新职位</li>
-      </ul>
-    </div>
-
-    <div class="current-box">
-      <div class="boxes">
-        <div class="box-cont">
-          <div class="box-title">
-            <a href="https://www.lagou.com/jobs/5380110.html?source=home_hot&i=home_hot-0" class="titleA">Oracle
-              EBS开发工程师</a>
-            <span class="publish">[一天前发布] </span>
-            <div class="publish-icon">
-              <img src="./img/icon_chat2_d162651.png" alt="" class="chat-img" />
-              <div class="chat-active">
-                <div class="chat-left">
-                  <img src="./img/CgotOVyhgc-AFnq_AACAHyZqbrs619.png" alt="" class="active-img" />
-                  <div class="chat-title">
-                    <p class="chat_title_name">马卫坤</p>
-                    <p class="chat_title_info">人事经理</p>
-                  </div>
-                  <div class="chat-info">
-                    HI,对我发布的职位感兴趣？用拉勾APP扫码,直接和我聊聊吧！
-                  </div>
-                </div>
-                <div class="chat-right">
-                  <img src="./img/yuanyaocode.png" alt="" class="chat-qrcode" />
-                </div>
-                <div class="triangle"></div>
-              </div>
-            </div>
-
-            <span class="money">12K-17K</span>
-            <p class="demand">经验3-5年 / 本科</p>
-          </div>
-
-          <div class="title-label">
-            <p>电商</p>
-            <p>物流</p>
-            <p>后端</p>
-          </div>
-          <div class="box-logo">
-            <a href="https://www.lagou.com/gongsi/482045.html">
-              <img src="./img/CgoB5lwAqRyAQJrQAAQVaYa1gBA132.png" alt="" />
-
-            </a>
-            <div class="logo-cpy">
-              <a href="https://www.lagou.com/gongsi/482045.html">
-                <p class="cpy1">源耀生物</p>
+  <body>
+    <!-- 头部组件 -->
+    <div id="head">
+      <div class="headBar">
+        <span class="lagou-icon"></span>
+        <div class="flexLeft">
+          <span class="station">全国站</span>
+          <a href="#">
+            <span class="changeStation">[切换城市]</span>
+          </a>
+          <ul class="indexLi">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">公司</a></li>
+            <li><a href="#">校园招聘</a></li>
+            <li><a href="#">言职</a></li>
+            <li>
+              <a href="#"
+                >课程
+                <span>new</span>
               </a>
-              <p class="cpy2">其他/上市公司/上海</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="flexRight">
+          <ul class="barRight">
+            <li><a href="">上传简历</a></li>
+            <li><a href="">职位订阅</a></li>
+            <li><a href="">登陆</a></li>
+            <li>|</li>
+            <li><a href="">注册</a></li>
+            <li><a href="">拉勾APP</a></li>
+            <li><a href="">进入企业版</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- 登陆组件 -->
+    <div id="title">
+      <div class="titleBar">
+        <img src="./img/logo_41a2761.png" alt="" class="leftImg" />
+        <div class="rightImgBox">
+          <img src="./img/text_ae1d842.png" alt="" class="rightImg" />
+          <span>
+            787164家公司 | 6472831个职位，在拉勾等你
+          </span>
+        </div>
+        <div class="inputBar">
+          <input type="text" placeholder="输入手机号" />
+          <input type="text" placeholder="验证码" />
+          <div><a href="#">| 获取</a></div>
+          <button>登陆/注册</button>
+        </div>
+      </div>
+    </div>
+    <!-- 搜索组件 -->
+    <div id="search">
+      <div class="search-bar">
+        <input
+          type="text"
+          placeholder="搜索职位、公司或地点"
+          class="search-bar-input"
+        />
+        <div class="search-bar-completion">
+          <div class="search-info">
+            <div class="job">dba</div>
+            <div class="job-number">大于 <span>450个</span>职位</div>
+            <div class="nbsp">职位</div>
+          </div>
+          <div class="search-info">
+            <div class="job">devops</div>
+            <div class="job-number">共<span>360个</span>职位</div>
+            <div class="nbsp">&nbsp;</div>
+          </div>
+          <div class="search-info">
+            <div class="job">devops</div>
+            <div class="job-number">共<span>360个</span>职位</div>
+            <div class="nbsp">&nbsp;</div>
+          </div>
+          <div class="search-info">
+            <div class="job">devops</div>
+            <div class="job-number">共<span>360个</span>职位</div>
+            <div class="nbsp">&nbsp;</div>
+          </div>
+          <div class="search-info">
+            <div class="job">devops</div>
+            <div class="job-number">共<span>360个</span>职位</div>
+            <div class="nbsp">&nbsp;</div>
+          </div>
+          <div class="search-info">
+            <div class="job">devops</div>
+            <div class="job-number">共<span>360个</span>职位</div>
+            <div class="nbsp">&nbsp;</div>
+          </div>
+          <div class="search-info">
+            <div class="job">devops</div>
+            <div class="job-number">共<span>360个</span>职位</div>
+            <div class="nbsp">&nbsp;</div>
+          </div>
+          <div class="search-info">
+            <div class="job">devops</div>
+            <div class="job-number">共<span>360个</span>职位</div>
+            <div class="nbsp">&nbsp;</div>
+          </div>
+          <div class="search-info">
+            <div class="job">devops</div>
+            <div class="job-number">共<span>360个</span>职位</div>
+            <div class="nbsp">&nbsp;</div>
+          </div>
+          <div class="search-info">
+            <div class="job">devops</div>
+            <div class="job-number">共<span>360个</span>职位</div>
+            <div class="nbsp">&nbsp;</div>
+          </div>
+        </div>
+        <div class="search-btn">
+          <button>搜索</button>
+        </div>
+        <div class="search-btn-info">
+          <span class="search-text">热门搜索:</span>
+          <a href="#">校招早班车</a>
+          <a href="#">IOS</a>
+          <a href="#">java面试</a>
+          <a href="#">架构设计</a>
+          <a href="#">C++</a>
+        </div>
+      </div>
+    </div>
+    <!-- 内容 -->
+    <div id="container">
+      <div class="menubox">
+        <div class="menu">
+          <ul class="menu-first">
+            <li>技术</li>
+            <li><a href="#">java</a></li>
+            <li><a href="#">php</a></li>
+            <li><a href="#">C++</a></li>
+            <li><a href="#">区块链</a></li>
+            <li>></li>
+          </ul>
+          <div class="menu-second">
+            <p>后端开发</p>
+            <ul>
+              <li>Java</li>
+              <li>C++</li>
+              <li>PHP</li>
+              <li>数据挖掘</li>
+              <li>搜索算法</li>
+              <li>精准推荐</li>
+              <li>C</li>
+              <li>C#</li>
+              <li>全栈工程师</li>
+              <li>.NET</li>
+              <li>HaDoop</li>
+              <li>Python</li>
+              <li>VB</li>
+              <li>Ruby</li>
+              <li>Go</li>
+              <li>Shell</li>
+            </ul>
+
+            <p>移动开发</p>
+
+            <ul>
+              <li>HTML5</li>
+              <li>Android</li>
+              <li>IOS</li>
+              <li>WP</li>
+              <li>移动其他开发</li>
+            </ul>
+            <p>前端开发</p>
+            <ul>
+              <li>WEB前段</li>
+              <li>FLASH</li>
+              <li>html5</li>
+              <li>Javascript</li>
+              <li>U3D</li>
+              <li>前段其他开发</li>
+            </ul>
+            <p>前端开发</p>
+            <ul>
+              <li>WEB前段</li>
+              <li>FLASH</li>
+              <li>html5</li>
+              <li>Javascript</li>
+              <li>U3D</li>
+              <li>前段其他开发</li>
+            </ul>
+            <p>前端开发</p>
+            <ul>
+              <li>WEB前段</li>
+              <li>FLASH</li>
+              <li>html5</li>
+              <li>Javascript</li>
+              <li>U3D</li>
+              <li>前段其他开发</li>
+            </ul>
+          </div>
+        </div>
+        <div class="menu">
+          <ul class="menu-first">
+            <li>技术</li>
+            <li><a href="#">java</a></li>
+            <li><a href="#">php</a></li>
+            <li><a href="#">C++</a></li>
+            <li><a href="#">区块链</a></li>
+            <li>></li>
+          </ul>
+        </div>
+        <div class="menu">
+          <ul class="menu-first">
+            <li>技术</li>
+            <li><a href="#">java</a></li>
+            <li><a href="#">php</a></li>
+            <li><a href="#">C++</a></li>
+            <li><a href="#">区块链</a></li>
+            <li>></li>
+          </ul>
+        </div>
+        <div class="menu">
+          <ul class="menu-first">
+            <li>技术</li>
+            <li><a href="#">java</a></li>
+            <li><a href="#">php</a></li>
+            <li><a href="#">C++</a></li>
+            <li><a href="#">区块链</a></li>
+            <li>></li>
+          </ul>
+        </div>
+        <div class="menu">
+          <ul class="menu-first" `>
+            <li>技术</li>
+            <li><a href="#">java</a></li>
+            <li><a href="#">php</a></li>
+            <li><a href="#">C++</a></li>
+            <li><a href="#">区块链</a></li>
+            <li>></li>
+          </ul>
+        </div>
+        <div class="menu">
+          <ul class="menu-first">
+            <li>技术</li>
+            <li><a href="#">java</a></li>
+            <li><a href="#">php</a></li>
+            <li><a href="#">C++</a></li>
+            <li><a href="#">区块链</a></li>
+            <li>></li>
+          </ul>
+        </div>
+        <div class="menu">
+          <ul class="menu-first">
+            <li>技术</li>
+            <li><a href="#">java</a></li>
+            <li><a href="#">php</a></li>
+            <li><a href="#">C++</a></li>
+            <li><a href="#">区块链</a></li>
+            <li>></li>
+          </ul>
+        </div>
+        <div class="menu">
+          <ul class="menu-first">
+            <li>技术</li>
+            <li><a href="#">java</a></li>
+            <li><a href="#">php</a></li>
+            <li><a href="#">C++</a></li>
+            <li><a href="#">区块链</a></li>
+            <li>></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="img-cpn">
+        <img src="./img/CgotOV2tnliAZHiOAAGUPLYyy4w057.jpg" alt="830*346" />
+      </div>
+    </div>
+    <!-- 24hour热门 -->
+    <div id="current-hot">
+      <div class="current-title">
+        <ul>
+          <li class="hot">24Hour热门</li>
+          <li class="newjob">最新职位</li>
+        </ul>
+      </div>
+
+      <div class="current-box">
+        <div class="boxes">
+          <div class="box-cont">
+            <div class="box-title">
+              <a
+                href="https://www.lagou.com/jobs/5380110.html?source=home_hot&i=home_hot-0"
+                class="titleA"
+                >Oracle EBS开发工程师</a
+              >
+              <span class="publish">[一天前发布] </span>
+              <div class="publish-icon">
+                <img
+                  src="./img/icon_chat2_d162651.png"
+                  alt=""
+                  class="chat-img"
+                />
+                <div class="chat-active">
+                  <div class="chat-left">
+                    <img
+                      src="./img/CgotOVyhgc-AFnq_AACAHyZqbrs619.png"
+                      alt=""
+                      class="active-img"
+                    />
+                    <div class="chat-title">
+                      <p class="chat_title_name">马卫坤</p>
+                      <p class="chat_title_info">人事经理</p>
+                    </div>
+                    <div class="chat-info">
+                      HI,对我发布的职位感兴趣？用拉勾APP扫码,直接和我聊聊吧！
+                    </div>
+                  </div>
+                  <div class="chat-right">
+                    <img
+                      src="./img/yuanyaocode.png"
+                      alt=""
+                      class="chat-qrcode"
+                    />
+                  </div>
+                  <div class="triangle"></div>
+                </div>
+              </div>
+
+              <span class="money">12K-17K</span>
+              <p class="demand">经验3-5年 / 本科</p>
+            </div>
+
+            <div class="title-label">
+              <p>电商</p>
+              <p>物流</p>
+              <p>后端</p>
+            </div>
+            <div class="box-logo">
+              <a href="https://www.lagou.com/gongsi/482045.html">
+                <img src="./img/CgoB5lwAqRyAQJrQAAQVaYa1gBA132.png" alt="" />
+              </a>
+              <div class="logo-cpy">
+                <a href="https://www.lagou.com/gongsi/482045.html">
+                  <p class="cpy1">源耀生物</p>
+                </a>
+                <p class="cpy2">其他/上市公司/上海</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="boxes">
-        <div class="box-cont">
-          <div class="box-title">
-            <a href="https://www.lagou.com/jobs/6077401.html?source=home_hot&i=home_hot-1" class="titleA">产品总监</a>
-            <span class="publish">[8:55发布] </span>
-            <div class="publish-icon">
-              <img src="./img/icon_chat2_d162651.png" alt="" class="chat-img" />
-              <div class="chat-active">
-                <div class="chat-left">
-                  <img src="./img/chat_active.png" alt="" class="active-img" />
-                  <div class="chat-title">
-                    <p class="chat_title_name">陈女士</p>
-                    <p class="chat_title_info">人事经理|HR</p>
+        <div class="boxes">
+          <div class="box-cont">
+            <div class="box-title">
+              <a
+                href="https://www.lagou.com/jobs/6077401.html?source=home_hot&i=home_hot-1"
+                class="titleA"
+                >产品总监</a
+              >
+              <span class="publish">[8:55发布] </span>
+              <div class="publish-icon">
+                <img
+                  src="./img/icon_chat2_d162651.png"
+                  alt=""
+                  class="chat-img"
+                />
+                <div class="chat-active">
+                  <div class="chat-left">
+                    <img
+                      src="./img/chat_active.png"
+                      alt=""
+                      class="active-img"
+                    />
+                    <div class="chat-title">
+                      <p class="chat_title_name">陈女士</p>
+                      <p class="chat_title_info">人事经理|HR</p>
+                    </div>
+                    <div class="chat-info">
+                      HI,对我发布的职位感兴趣？用拉勾APP扫码,直接和我聊聊吧！
+                    </div>
                   </div>
-                  <div class="chat-info">
-                    HI,对我发布的职位感兴趣？用拉勾APP扫码,直接和我聊聊吧！
+                  <div class="chat-right">
+                    <img
+                      src="./img/zhongweihuitongcode.png"
+                      alt=""
+                      class="chat-qrcode"
+                    />
                   </div>
+                  <div class="triangle"></div>
                 </div>
-                <div class="chat-right">
-                  <img src="./img/zhongweihuitongcode.png" alt="" class="chat-qrcode" />
-                </div>
-                <div class="triangle"></div>
               </div>
+
+              <span class="money">18K-25K</span>
+              <p class="demand">经验5-10年 / 本科</p>
             </div>
 
-            <span class="money">18K-25K</span>
-            <p class="demand">经验5-10年 / 本科</p>
-          </div>
-
-          <div class="title-label">
-            <p>产品设计</p>
-            <p>产品策划</p>
-            <p>用户研究</p>
-          </div>
-          <div class="box-logo">
-            <a href="https://www.lagou.com/gongsi/111408.html">
-              <img src="./img/Cgp3O1aCBXSAee3NAAAKM5RbCW0810.jpg" alt="" />
-
-            </a>
-            <div class="logo-cpy">
+            <div class="title-label">
+              <p>产品设计</p>
+              <p>产品策划</p>
+              <p>用户研究</p>
+            </div>
+            <div class="box-logo">
               <a href="https://www.lagou.com/gongsi/111408.html">
-                <p class="cpy1">中卫慧通</p>
+                <img src="./img/Cgp3O1aCBXSAee3NAAAKM5RbCW0810.jpg" alt="" />
               </a>
-              <p class="cpy2">移动互联网,企业服务/A轮/武汉</p>
+              <div class="logo-cpy">
+                <a href="https://www.lagou.com/gongsi/111408.html">
+                  <p class="cpy1">中卫慧通</p>
+                </a>
+                <p class="cpy2">移动互联网,企业服务/A轮/武汉</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="boxes">
-        <div class="box-cont">
-          <div class="box-title">
-            <a href="https://www.lagou.com/jobs/5761378.html?source=home_hot&i=home_hot-2" class="titleA">高级android开发工程师</a>
-            <span class="publish">[一天前发布] </span>
-            <div class="publish-icon">
-              <img src="./img/icon_chat2_d162651.png" alt="" class="chat-img" />
-              <div class="chat-active">
-                <div class="chat-left">
-                  <img src="./img/CgotOVrdRECAcPKDAAAZ9abC428207.jpg" alt="" class="active-img" />
-                  <div class="chat-title">
-                    <p class="chat_title_name">wayne</p>
-                    <p class="chat_title_info">HR</p>
+        <div class="boxes">
+          <div class="box-cont">
+            <div class="box-title">
+              <a
+                href="https://www.lagou.com/jobs/5761378.html?source=home_hot&i=home_hot-2"
+                class="titleA"
+                >高级android开发工程师</a
+              >
+              <span class="publish">[一天前发布] </span>
+              <div class="publish-icon">
+                <img
+                  src="./img/icon_chat2_d162651.png"
+                  alt=""
+                  class="chat-img"
+                />
+                <div class="chat-active">
+                  <div class="chat-left">
+                    <img
+                      src="./img/CgotOVrdRECAcPKDAAAZ9abC428207.jpg"
+                      alt=""
+                      class="active-img"
+                    />
+                    <div class="chat-title">
+                      <p class="chat_title_name">wayne</p>
+                      <p class="chat_title_info">HR</p>
+                    </div>
+                    <div class="chat-info">
+                      HI,对我发布的职位感兴趣？用拉勾APP扫码,直接和我聊聊吧！
+                    </div>
                   </div>
-                  <div class="chat-info">
-                    HI,对我发布的职位感兴趣？用拉勾APP扫码,直接和我聊聊吧！
+                  <div class="chat-right">
+                    <img
+                      src="./img/huoyingcode.png"
+                      alt=""
+                      class="chat-qrcode"
+                    />
                   </div>
+                  <div class="triangle"></div>
                 </div>
-                <div class="chat-right">
-                  <img src="./img/huoyingcode.png" alt="" class="chat-qrcode" />
-                </div>
-                <div class="triangle"></div>
               </div>
+
+              <span class="money">20K-40K</span>
+              <p class="demand">经验3-5年 / 本科</p>
             </div>
 
-            <span class="money">20K-40K</span>
-            <p class="demand">经验3-5年 / 本科</p>
-          </div>
-
-          <div class="title-label">
-            <p>工具软件</p>
-            <p>视频</p>
-            <!-- <p>后端</p> -->
-          </div>
-          <div class="box-logo">
-            <a href="https://www.lagou.com/gongsi/308958.html">
-              <img src="./img/CgotOVrdonqAO5uLAAAs3QnQeTw857.png" alt="" />
-
-            </a>
-            <div class="logo-cpy">
+            <div class="title-label">
+              <p>工具软件</p>
+              <p>视频</p>
+              <!-- <p>后端</p> -->
+            </div>
+            <div class="box-logo">
               <a href="https://www.lagou.com/gongsi/308958.html">
-                <p class="cpy1">火萤</p>
+                <img src="./img/CgotOVrdonqAO5uLAAAs3QnQeTw857.png" alt="" />
               </a>
-              <p class="cpy2">移动互联网/不需要融资/北京</p>
+              <div class="logo-cpy">
+                <a href="https://www.lagou.com/gongsi/308958.html">
+                  <p class="cpy1">火萤</p>
+                </a>
+                <p class="cpy2">移动互联网/不需要融资/北京</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="boxes">
-        <div class="box-cont">
-          <div class="box-title">
-            <a href="https://www.lagou.com/jobs/4600877.html?source=home_hot&i=home_hot-3" class="titleA">java（大数据，云平台，人工智能，区块链）</a>
-            <span class="publish">[一天前发布] </span>
-            <div class="publish-icon">
-              <img src="./img/icon_chat2_d162651.png" alt="" class="chat-img" />
-              <div class="chat-active">
-                <div class="chat-left">
-                  <img src="./img/CgotOVz37E6AGpySAAByNhplrao982.png" alt="" class="active-img" />
-                  <div class="chat-title">
-                    <p class="chat_title_name">招聘</p>
-                    <p class="chat_title_info">人力资源总监</p>
+        <div class="boxes">
+          <div class="box-cont">
+            <div class="box-title">
+              <a
+                href="https://www.lagou.com/jobs/4600877.html?source=home_hot&i=home_hot-3"
+                class="titleA"
+                >java（大数据，云平台，人工智能，区块链）</a
+              >
+              <span class="publish">[一天前发布] </span>
+              <div class="publish-icon">
+                <img
+                  src="./img/icon_chat2_d162651.png"
+                  alt=""
+                  class="chat-img"
+                />
+                <div class="chat-active">
+                  <div class="chat-left">
+                    <img
+                      src="./img/CgotOVz37E6AGpySAAByNhplrao982.png"
+                      alt=""
+                      class="active-img"
+                    />
+                    <div class="chat-title">
+                      <p class="chat_title_name">招聘</p>
+                      <p class="chat_title_info">人力资源总监</p>
+                    </div>
+                    <div class="chat-info">
+                      HI,对我发布的职位感兴趣？用拉勾APP扫码,直接和我聊聊吧！
+                    </div>
                   </div>
-                  <div class="chat-info">
-                    HI,对我发布的职位感兴趣？用拉勾APP扫码,直接和我聊聊吧！
+                  <div class="chat-right">
+                    <img
+                      src="./img/quanpuguangdiancode.png"
+                      alt=""
+                      class="chat-qrcode"
+                    />
                   </div>
+                  <div class="triangle"></div>
                 </div>
-                <div class="chat-right">
-                  <img src="./img/quanpuguangdiancode.png" alt="" class="chat-qrcode" />
-                </div>
-                <div class="triangle"></div>
               </div>
+
+              <span class="money">15K-30K</span>
+              <p class="demand">经验3-5年 / 本科</p>
             </div>
 
-            <span class="money">15K-30K</span>
-            <p class="demand">经验3-5年 / 本科</p>
-          </div>
-
-          <div class="title-label">
-            <p>java</p>
-            <p>架构师</p>
-            <!-- <p>后端</p> -->
-          </div>
-          <div class="box-logo">
-            <a href="https://www.lagou.com/gongsi/388801.html">
-              <img src="./img/CgoB5lsCbiSAU0OFAAA3G6wtnRQ293.png" alt="" />
-
-            </a>
-            <div class="logo-cpy">
+            <div class="title-label">
+              <p>java</p>
+              <p>架构师</p>
+              <!-- <p>后端</p> -->
+            </div>
+            <div class="box-logo">
               <a href="https://www.lagou.com/gongsi/388801.html">
-                <p class="cpy1">泉普光电</p>
+                <img src="./img/CgoB5lsCbiSAU0OFAAA3G6wtnRQ293.png" alt="" />
               </a>
-              <p class="cpy2">移动互联网,数据服务/不需要融资/深圳</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="boxes">
-        <div class="box-cont">
-          <div class="box-title">
-            <a href="https://www.lagou.com/jobs/6432681.html?source=home_hot&i=home_hot-4" target="_blank" class="titleA">固件工程师</a>
-            <span class="publish">[一天前发布] </span>
-            <div class="publish-icon">
-              <img src="./img/icon_chat2_d162651.png" alt="" class="chat-img" />
-              <div class="chat-active">
-                <div class="chat-left">
-                  <img src="./img/chat_active.png" alt="" class="active-img" />
-                  <div class="chat-title">
-                    <p class="chat_title_name">招聘</p>
-                    <p class="chat_title_info">HR</p>
-                  </div>
-                  <div class="chat-info">
-                    HI,对我发布的职位感兴趣？用拉勾APP扫码,直接和我聊聊吧！
-                  </div>
-                </div>
-                <div class="chat-right">
-                  <img src="./img/yimadacode.png" alt="" class="chat-qrcode" />
-                </div>
-                <div class="triangle"></div>
+              <div class="logo-cpy">
+                <a href="https://www.lagou.com/gongsi/388801.html">
+                  <p class="cpy1">泉普光电</p>
+                </a>
+                <p class="cpy2">移动互联网,数据服务/不需要融资/深圳</p>
               </div>
             </div>
-
-            <span class="money">8K-15K</span>
-            <p class="demand">经验1-3年 / 本科</p>
-          </div>
-
-          <div class="title-label">
-            <p>C</p>
-            <p>电气设计</p>
-            <p>模拟电路设计</p>
-          </div>
-          <div class="box-logo">
-            <a href="https://www.lagou.com/gongsi/141645.html" target="_blank">
-              <img src="./img/CgotOVuXeYmABRBnAAAVsSFCoCc231.jpg" alt="" />
-            </a>
-            <div class="logo-cpy">
-              <a href="https://www.lagou.com/gongsi/141645.html" target="_blank">
-                <p class="cpy1">Immotor易马达科技</p>
-              </a>
-              <p class="cpy2">硬件,移动互联网/B轮/深圳</p>
-            </div>
           </div>
         </div>
-      </div>
-      <!-- this -->
-      <div class="boxes">
-        <div class="box-cont">
-          <div class="box-title">
-            <a href="https://www.lagou.com/jobs/5380110.html?source=home_hot&i=home_hot-0" class="titleA">Oracle
-              EBS开发工程师</a>
-            <span class="publish">[一天前发布] </span>
-            <div class="publish-icon">
-              <img src="./img/icon_chat2_d162651.png" alt="" class="chat-img" />
-              <div class="chat-active">
-                <div class="chat-left">
-                  <img src="./img/chat_active.png" alt="" class="active-img" />
-                  <div class="chat-title">
-                    <p class="chat_title_name">招聘</p>
-                    <p class="chat_title_info">HR</p>
-                  </div>
-                  <div class="chat-info">
-                    HI,对我发布的职位感兴趣？用拉勾APP扫码,直接和我聊聊吧！
-                  </div>
-                </div>
-                <div class="chat-right">
-                  <img src="./img/qrcode.png" alt="" class="chat-qrcode" />
-                </div>
-                <div class="triangle"></div>
-              </div>
-            </div>
-
-            <span class="money">10K-16K</span>
-            <p class="demand">经验3-5年 / 本科</p>
-          </div>
-
-          <div class="title-label">
-            <p>电商</p>
-            <p>物流</p>
-            <p>后端</p>
-          </div>
-          <div class="box-logo">
-            <a href="https://www.lagou.com/gongsi/482045.html">
-              <img src="./img/CgoB5lwAqRyAQJrQAAQVaYa1gBA132.png" alt="" />
-
-            </a>
-            <div class="logo-cpy">
-              <a href="https://www.lagou.com/gongsi/482045.html">
-                <p class="cpy1">源耀生物</p>
-              </a>
-              <p class="cpy2">其他/上市公司/上海</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="boxes">
+        <div class="boxes">
           <div class="box-cont">
             <div class="box-title">
-              <a href="https://www.lagou.com/jobs/5380110.html?source=home_hot&i=home_hot-0" class="titleA">Oracle
-                EBS开发工程师</a>
+              <a
+                href="https://www.lagou.com/jobs/6432681.html?source=home_hot&i=home_hot-4"
+                target="_blank"
+                class="titleA"
+                >固件工程师</a
+              >
               <span class="publish">[一天前发布] </span>
               <div class="publish-icon">
-                <img src="./img/icon_chat2_d162651.png" alt="" class="chat-img" />
+                <img
+                  src="./img/icon_chat2_d162651.png"
+                  alt=""
+                  class="chat-img"
+                />
                 <div class="chat-active">
                   <div class="chat-left">
-                    <img src="./img/chat_active.png" alt="" class="active-img" />
+                    <img
+                      src="./img/chat_active.png"
+                      alt=""
+                      class="active-img"
+                    />
+                    <div class="chat-title">
+                      <p class="chat_title_name">招聘</p>
+                      <p class="chat_title_info">HR</p>
+                    </div>
+                    <div class="chat-info">
+                      HI,对我发布的职位感兴趣？用拉勾APP扫码,直接和我聊聊吧！
+                    </div>
+                  </div>
+                  <div class="chat-right">
+                    <img
+                      src="./img/yimadacode.png"
+                      alt=""
+                      class="chat-qrcode"
+                    />
+                  </div>
+                  <div class="triangle"></div>
+                </div>
+              </div>
+
+              <span class="money">8K-15K</span>
+              <p class="demand">经验1-3年 / 本科</p>
+            </div>
+
+            <div class="title-label">
+              <p>C</p>
+              <p>电气设计</p>
+              <p>模拟电路设计</p>
+            </div>
+            <div class="box-logo">
+              <a
+                href="https://www.lagou.com/gongsi/141645.html"
+                target="_blank"
+              >
+                <img src="./img/CgotOVuXeYmABRBnAAAVsSFCoCc231.jpg" alt="" />
+              </a>
+              <div class="logo-cpy">
+                <a
+                  href="https://www.lagou.com/gongsi/141645.html"
+                  target="_blank"
+                >
+                  <p class="cpy1">Immotor易马达科技</p>
+                </a>
+                <p class="cpy2">硬件,移动互联网/B轮/深圳</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- this -->
+        <div class="boxes">
+          <div class="box-cont">
+            <div class="box-title">
+              <a
+                href="https://www.lagou.com/jobs/5380110.html?source=home_hot&i=home_hot-0"
+                class="titleA"
+                >Oracle EBS开发工程师</a
+              >
+              <span class="publish">[一天前发布] </span>
+              <div class="publish-icon">
+                <img
+                  src="./img/icon_chat2_d162651.png"
+                  alt=""
+                  class="chat-img"
+                />
+                <div class="chat-active">
+                  <div class="chat-left">
+                    <img
+                      src="./img/chat_active.png"
+                      alt=""
+                      class="active-img"
+                    />
                     <div class="chat-title">
                       <p class="chat_title_name">招聘</p>
                       <p class="chat_title_info">HR</p>
@@ -604,11 +652,11 @@
                   <div class="triangle"></div>
                 </div>
               </div>
-  
+
               <span class="money">10K-16K</span>
               <p class="demand">经验3-5年 / 本科</p>
             </div>
-  
+
             <div class="title-label">
               <p>电商</p>
               <p>物流</p>
@@ -617,7 +665,6 @@
             <div class="box-logo">
               <a href="https://www.lagou.com/gongsi/482045.html">
                 <img src="./img/CgoB5lwAqRyAQJrQAAQVaYa1gBA132.png" alt="" />
-  
               </a>
               <div class="logo-cpy">
                 <a href="https://www.lagou.com/gongsi/482045.html">
@@ -631,14 +678,25 @@
         <div class="boxes">
           <div class="box-cont">
             <div class="box-title">
-              <a href="https://www.lagou.com/jobs/5380110.html?source=home_hot&i=home_hot-0" class="titleA">Oracle
-                EBS开发工程师</a>
+              <a
+                href="https://www.lagou.com/jobs/5380110.html?source=home_hot&i=home_hot-0"
+                class="titleA"
+                >Oracle EBS开发工程师</a
+              >
               <span class="publish">[一天前发布] </span>
               <div class="publish-icon">
-                <img src="./img/icon_chat2_d162651.png" alt="" class="chat-img" />
+                <img
+                  src="./img/icon_chat2_d162651.png"
+                  alt=""
+                  class="chat-img"
+                />
                 <div class="chat-active">
                   <div class="chat-left">
-                    <img src="./img/chat_active.png" alt="" class="active-img" />
+                    <img
+                      src="./img/chat_active.png"
+                      alt=""
+                      class="active-img"
+                    />
                     <div class="chat-title">
                       <p class="chat_title_name">招聘</p>
                       <p class="chat_title_info">HR</p>
@@ -653,11 +711,11 @@
                   <div class="triangle"></div>
                 </div>
               </div>
-  
+
               <span class="money">10K-16K</span>
               <p class="demand">经验3-5年 / 本科</p>
             </div>
-  
+
             <div class="title-label">
               <p>电商</p>
               <p>物流</p>
@@ -666,7 +724,6 @@
             <div class="box-logo">
               <a href="https://www.lagou.com/gongsi/482045.html">
                 <img src="./img/CgoB5lwAqRyAQJrQAAQVaYa1gBA132.png" alt="" />
-  
               </a>
               <div class="logo-cpy">
                 <a href="https://www.lagou.com/gongsi/482045.html">
@@ -680,14 +737,25 @@
         <div class="boxes">
           <div class="box-cont">
             <div class="box-title">
-              <a href="https://www.lagou.com/jobs/5380110.html?source=home_hot&i=home_hot-0" class="titleA">Oracle
-                EBS开发工程师</a>
+              <a
+                href="https://www.lagou.com/jobs/5380110.html?source=home_hot&i=home_hot-0"
+                class="titleA"
+                >Oracle EBS开发工程师</a
+              >
               <span class="publish">[一天前发布] </span>
               <div class="publish-icon">
-                <img src="./img/icon_chat2_d162651.png" alt="" class="chat-img" />
+                <img
+                  src="./img/icon_chat2_d162651.png"
+                  alt=""
+                  class="chat-img"
+                />
                 <div class="chat-active">
                   <div class="chat-left">
-                    <img src="./img/chat_active.png" alt="" class="active-img" />
+                    <img
+                      src="./img/chat_active.png"
+                      alt=""
+                      class="active-img"
+                    />
                     <div class="chat-title">
                       <p class="chat_title_name">招聘</p>
                       <p class="chat_title_info">HR</p>
@@ -702,11 +770,11 @@
                   <div class="triangle"></div>
                 </div>
               </div>
-  
+
               <span class="money">10K-16K</span>
               <p class="demand">经验3-5年 / 本科</p>
             </div>
-  
+
             <div class="title-label">
               <p>电商</p>
               <p>物流</p>
@@ -715,7 +783,6 @@
             <div class="box-logo">
               <a href="https://www.lagou.com/gongsi/482045.html">
                 <img src="./img/CgoB5lwAqRyAQJrQAAQVaYa1gBA132.png" alt="" />
-  
               </a>
               <div class="logo-cpy">
                 <a href="https://www.lagou.com/gongsi/482045.html">
@@ -726,8 +793,68 @@
             </div>
           </div>
         </div>
-      <div class="current-btn">
-        <button>查看更多</button>
+        <div class="boxes">
+          <div class="box-cont">
+            <div class="box-title">
+              <a
+                href="https://www.lagou.com/jobs/5380110.html?source=home_hot&i=home_hot-0"
+                class="titleA"
+                >Oracle EBS开发工程师</a
+              >
+              <span class="publish">[一天前发布] </span>
+              <div class="publish-icon">
+                <img
+                  src="./img/icon_chat2_d162651.png"
+                  alt=""
+                  class="chat-img"
+                />
+                <div class="chat-active">
+                  <div class="chat-left">
+                    <img
+                      src="./img/chat_active.png"
+                      alt=""
+                      class="active-img"
+                    />
+                    <div class="chat-title">
+                      <p class="chat_title_name">招聘</p>
+                      <p class="chat_title_info">HR</p>
+                    </div>
+                    <div class="chat-info">
+                      HI,对我发布的职位感兴趣？用拉勾APP扫码,直接和我聊聊吧！
+                    </div>
+                  </div>
+                  <div class="chat-right">
+                    <img src="./img/qrcode.png" alt="" class="chat-qrcode" />
+                  </div>
+                  <div class="triangle"></div>
+                </div>
+              </div>
+
+              <span class="money">10K-16K</span>
+              <p class="demand">经验3-5年 / 本科</p>
+            </div>
+
+            <div class="title-label">
+              <p>电商</p>
+              <p>物流</p>
+              <p>后端</p>
+            </div>
+            <div class="box-logo">
+              <a href="https://www.lagou.com/gongsi/482045.html">
+                <img src="./img/CgoB5lwAqRyAQJrQAAQVaYa1gBA132.png" alt="" />
+              </a>
+              <div class="logo-cpy">
+                <a href="https://www.lagou.com/gongsi/482045.html">
+                  <p class="cpy1">源耀生物</p>
+                </a>
+                <p class="cpy2">其他/上市公司/上海</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="current-btn">
+          <button>查看更多</button>
+        </div>
       </div>
     </div>
     <!-- 互联网热门公司 -->
@@ -740,7 +867,10 @@
           <div class="com-cont">
             <div class="box-top">
               <a href="https://www.lagou.com/gongsi/58635.html">
-                <img src="../recruitment/img/CgotOVzxFqCAedwfAAAtOxHRS_0737.png" alt="" />
+                <img
+                  src="../recruitment/img/CgotOVzxFqCAedwfAAAtOxHRS_0737.png"
+                  alt=""
+                />
               </a>
               <a href="https://www.lagou.com/gongsi/58635.html">
                 <p class="com-name">即刻</p>
@@ -1227,9 +1357,15 @@
         </div>
         <div class="contact">
           <a href="">
-            <span></span><span class="weixin">拉勾微信
+            <span></span
+            ><span class="weixin"
+              >拉勾微信
 
-              <img src="./img/lg_pic_weixin@2x_c372698.png" alt="" class="weixin-pic" />
+              <img
+                src="./img/lg_pic_weixin@2x_c372698.png"
+                alt=""
+                class="weixin-pic"
+              />
             </span>
           </a>
           <a href=""> <span></span><span class="weibo">拉勾微博</span> </a>
@@ -1315,6 +1451,5 @@
       </div>
     </div>
     <div class="gotop"></div>
-</body>
-
+  </body>
 </html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>hover操纵同级元素</title>
+    <style>
+      .first {
+        color: #5d756e;
+      }
+
+      .first:hover + .fourth {
+        color: red;
+      }
+
+      /*>或空格均可用于子代选择*/
+      .first:hover > .first-child {
+        color: #000000;
+      }
+
+      .first:hover + .second {
+        color: rgba(0, 0, 0, 0.38);
+      }
+
+      .first:hover + .second > .third {
+        color: #0000ff;
+      }
+
+      /* ‘+’ 用于同级选择 */
+      /* ‘>’ 或 ‘ ’ 用于后代选择 */
+    </style>
+  </head>
+  <body>
+    <div class="first">
+      计划hover元素
+      <div class="first-child">hover元素的子元素</div>
+    </div>
+    <div class="second">
+      紧邻hover的下个同级元素
+      <div class="third">紧邻hover的下个同级元素的子元素</div>
+    </div>
+    <div class="fourth" style="">非紧邻hover的同级元素，无法改变</div>
+  </body>
+</html>

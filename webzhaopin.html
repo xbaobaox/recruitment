@@ -71,6 +71,63 @@
     <div id="filter">
       <div class="filter_wrapper">
         <!-- 工作地点 -->
+        <!-- hover 更多地点 -->
+        <span class="workplace_more"
+          >更多
+          <i></i>
+        </span>
+        <div class="other_place">
+          <ul class="other_place_ul">
+            <li><span class="other_place_title">工作地点:</span></li>
+            <li><span class="other_all">全国</span></li>
+            <li><a href="#">北京</a></li>
+            <li><a href="#">上海</a></li>
+            <li><a href="#">深圳</a></li>
+            <li><a href="#">广州</a></li>
+            <li><a href="#">杭州</a></li>
+            <li><a href="#">成都</a></li>
+            <li><a href="#">南京</a></li>
+            <li><a href="#">武汉</a></li>
+            <li><a href="#">西安</a></li>
+            <li><a href="#">厦门</a></li>
+            <li><a href="#">长沙</a></li>
+            <li><a href="#">苏州</a></li>
+            <li><a href="#">天津</a></li>
+          </ul>
+          <ul class="other_place_ul_bottom">
+            <li><a href="">重庆</a></li>
+            <li><a href="">郑州</a></li>
+            <li><a href="">青岛</a></li>
+            <li><a href="">合肥</a></li>
+            <li><a href="">福州</a></li>
+            <li><a href="">济南</a></li>
+            <li><a href="">大连</a></li>
+            <li><a href="">珠海</a></li>
+            <li><a href="">无锡</a></li>
+            <li><a href="">佛山</a></li>
+            <li><a href="">东莞</a></li>
+            <li><a href="">宁波</a></li>
+            <li><a href="">常州</a></li>
+            <li><a href="">沈阳</a></li>
+            <li><a href="">石家庄</a></li>
+            <li><a href="">昆明</a></li>
+            <li><a href="">南昌</a></li>
+            <li><a href="">南宁</a></li>
+            <li><a href="">哈尔滨</a></li>
+            <li><a href="">海口</a></li>
+            <li><a href="">中山</a></li>
+            <li><a href="">惠州</a></li>
+            <li><a href="">贵阳</a></li>
+            <li><a href="">长春</a></li>
+            <li><a href="">太原</a></li>
+            <li><a href="">嘉兴</a></li>
+            <li><a href="">泰安</a></li>
+            <li><a href="">昆山</a></li>
+            <li><a href="">烟台</a></li>
+            <li><a href="">泉州</a></li>
+            <li><a href="">全部城市 ></a></li>
+          </ul>
+        </div>
         <ul class="workplace">
           <li><span class="workplace_title">工作地点:</span></li>
           <li><span class="all">全国</span></li>
@@ -88,9 +145,7 @@
           <li><a href="#">苏州</a></li>
           <li><a href="#">天津</a></li>
         </ul>
-        <span class="workplace_more">更多
-          <i></i>
-        </span>
+
         <!-- 工作经验 -->
         <ul class="multi_chosen">
           <li><span class="chosen_title">工作经验:</span></li>
@@ -150,11 +205,65 @@
           <li><a href="">消费生活</a></li>
           <li><a href="">硬件</a></li>
         </ul>
-        <span class="chosen_more">更多 
+
+        <span class="chosen_more"
+          >更多
           <i></i>
         </span>
       </div>
+
+      <div class="collapse">></div>
+      <div class="order">
+        <div class="item_order">
+          <p class="order_title">
+            排序方式:
+            <a href="" class="order_default">默认</a>
+            <a href="">最新</a>
+          </p>
+        </div>
+        <div class="salary">
+          <span class="salary_title">月薪:</span>
+          <select name="salary" id="" class="salary_select">
+            <option value="不限">不限</option>
+          </select>
+        </div>
+        <div class="type">
+          <span class="type_title">工作性质:</span>
+          <select name="type" class="type_select">
+            <option value="不限">不限</option>
+          </select>
+        </div>
+      </div>
+      <!-- 工作列表 -->
+      <div id="job_list">
+        <div class="items">
+          <div class="item_top">
+            <div class="item_top_cont">
+              <div class="item_title">
+                <span class="title_name">前端平台研发工程师</span>
+                <span class="item_place">[北京·海淀区]</span>
+                <span class="item_date">1天前发布</span>
+              </div>
+              <div class="title_bot">
+                <span class="item_salary">20k-40k</span>
+                经验5-10年 / 本科
+              </div>
+            </div>
+            <div class="company">
+              <p class="com_name">建信金科<i>√</i></p>
+              <p class="industry">金融,软件开发/不需要融资/2000人以上</p>
+            </div>
+            <div class="com_logo">
+              <a href="">
+                <img src="./img/CgoB5lxGkWOAX8BcAAFAxNnySXk934.png" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="item_bot"></div>
+        </div>
+      </div>
     </div>
+
     <!-- 底部信息 -->
     <div id="footer">
       <div class="footer-left">
