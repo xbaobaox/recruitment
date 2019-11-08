@@ -2045,6 +2045,8 @@ li {
   border-right: 1px solid #eaeaea;
 }
 .top_info_box {
+  box-sizing: border-box;
+  width: 853px; 
   display: inline-block;
   vertical-align: top;
 }
@@ -2175,7 +2177,7 @@ li {
 }
 .nav_bar_share {
   padding-top: 9px;
-  width: 121px;
+  width: 123px;
 }
 .nav_bar_share span {
   vertical-align: 4px;
